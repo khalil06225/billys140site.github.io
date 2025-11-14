@@ -1,18 +1,89 @@
-function showContent(sectionId) {
-    // Hide all content sections
-    const sections = document.querySelectorAll('.content');
-    sections.forEach(section => {
-        section.classList.add('hidden');
-    });
-
-    // Show the selected section
-    const selectedSection = document.getElementById(sectionId);
-    if (selectedSection) {
-        selectedSection.classList.remove('hidden');
-    }
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('resto.png');
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+    color: #333; /* Dark gray text */
+    line-height: 1.6;
 }
 
-// Show menu by default
-document.addEventListener('DOMContentLoaded', function() {
-    showContent('menu');
-});
+header {
+    background: linear-gradient(to right, #ffff00, #ff69b4, #800080); /* Yellow, pink, purple gradient */
+    text-align: center;
+    padding: 2rem 1rem;
+    border-bottom: 2px solid #000; /* Black border */
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    width: 120px;
+    height: auto;
+}
+
+header h1 {
+    color: white;
+    -webkit-text-stroke: 2px black; /* Black outline */
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #ffffff; /* White */
+    text-align: center;
+    border-bottom: 2px solid #000; /* Black border */
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 2rem;
+}
+
+nav ul li a {
+    color: #000; /* Black text */
+    text-decoration: none;
+    padding: 1rem 0;
+    display: inline-block;
+    font-weight: bold;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Fun font */
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #800080; /* Purple on hover */
+}
+
+main {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.content {
+    background-color: #ffffff;
+    color: #333;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: transparent;
+    border-top: none;
+}
