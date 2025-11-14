@@ -12,7 +12,7 @@ function showContent(sectionId) {
     }
 }
 
-// Show home by default
+// Show menu by default
 document.addEventListener('DOMContentLoaded', function() {
-    showContent('home');
+    showContent('menu');
 });
