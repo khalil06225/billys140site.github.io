@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billy's 140</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="logo.jpg" alt="Billy's 140 Logo" class="logo">
+        <h1>Bienvenue sur Billy's 140</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showContent('home')">ACCUEIL</a></li>
+            <li><a href="#" onclick="showContent('about')">À PROPOS</a></li>
+            <li><a href="#" onclick="showContent('services')">SERVICES</a></li>
+            <li><a href="#" onclick="showContent('contact')">CONTACT</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="home" class="content">
+            <h2>Accueil</h2>
+            <p>Bienvenue sur le site de Billy's 140. Découvrez nos offres colorées et excitantes !</p>
+        </section>
+        <section id="about" class="content hidden">
+            <h2>À propos</h2>
+            <p>Billy's 140 est un site dédié à l'aventure et au fun. Nous proposons des expériences uniques.</p>
+        </section>
+        <section id="services" class="content hidden">
+            <h2>Services</h2>
+            <p>Nos services incluent des consultations, des événements et bien plus. Cliquez pour en savoir plus !</p>
+        </section>
+        <section id="contact" class="content hidden">
+            <h2>Contact</h2>
+            <p>Contactez-nous à billys140@example.com pour toute question.</p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
