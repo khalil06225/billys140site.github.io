@@ -2,7 +2,7 @@ body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('resto.png');
+    background-image: url('fondr.png');
     background-size: cover;
     background-position: center top;
     background-attachment: fixed;
@@ -86,4 +86,109 @@ footer {
     padding: 1rem;
     background-color: transparent;
     border-top: none;
+}
+
+/* Menu item styles */
+.menu-item {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border: 2px solid #000;
+    margin: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+}
+
+.menu-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+}
+
+#modalImage {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: contain;
+}
+
+#modalDescription {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Back button styles */
+.back-button {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 2px solid #800080;
+    color: #800080;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    -webkit-text-stroke: 1px #800080;
+    text-stroke: 1px #800080;
+}
+
+.back-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Image caption styles */
+.image-caption {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 24px;
+    color: #fff;
+    -webkit-text-stroke: 2px #000;
+    text-stroke: 2px #000;
+    margin: 10px 0;
 }
