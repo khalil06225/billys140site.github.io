@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Billy's 140</title>
+    <title>Billy's 140</title> 
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -21,6 +21,10 @@
         <section id="menu" class="content">
             <h2>Menu</h2>
             <p>Découvrez notre menu délicieux avec une variété de plats savoureux.</p>
+            <div class="menu-item" onclick="showContent('tasty')">
+                <img src="photo/tasty.png" alt="Tasty" class="menu-image">
+                <p class="menu-caption">Tasty</p>
+            </div>
         </section>
         <section id="join" class="content hidden">
             <h2>Rejoins Nous</h2>
@@ -32,6 +36,12 @@
             <a href="https://www.instagram.com/billys_140/" target="_blank">
                 <img src="https://img.icons8.com/color/96/instagram-new--v1.png" alt="Instagram" style="width: 100px; height: auto; border: none;">
             </a>
+        </section>
+        <section id="tasty" class="content hidden">
+            <h2>Tasty</h2>
+            <img src="photo/tasty.png" alt="Tasty" style="width: 100%; max-width: 600px; height: auto;">
+            <p>Riz, Sauce maison, poulet crousty, sauce chili thaï</p>
+            <button class="back-button" onclick="showContent('menu')">Retour au Menu</button>
         </section>
     </main>
     <footer>
