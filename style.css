@@ -1,8 +1,12 @@
+/* Importation de polices modernes et funs */
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Open+Sans:wght@400;700&display=swap');
+
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Open Sans', Arial, sans-serif; /* Police lisible pour le corps */
     margin: 0;
     padding: 0;
-    background-image: url('fondr.png');
+    /* CHEMIN D'IMAGE SIMPLIFIÉ */
+    background-image: url('fondr.png'); 
     background-size: cover;
     background-position: center top;
     background-attachment: fixed;
@@ -11,184 +15,286 @@ body {
 }
 
 header {
-    background: linear-gradient(to right, #ffff00, #ff69b4, #800080); /* Yellow, pink, purple gradient */
+    background: linear-gradient(to right, #FFD700, #FF69B4, #8A2BE2); /* Yellow, Pink, Blue-Violet gradient */
     text-align: center;
-    padding: 2rem 1rem;
-    border-bottom: 2px solid #000; /* Black border */
+    padding: 3rem 1rem 1.5rem; /* Plus d'espace pour un look plus pro */
+    border-bottom: 5px solid #000;
     position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
     position: absolute;
     top: 5px;
-    left: 10px;
-    width: 120px;
+    left: 15px;
+    width: 100px;
     height: auto;
+    border-radius: 50%; /* Rendre le logo rond */
+    border: 3px solid #000;
 }
 
 header h1 {
-    color: white;
-    -webkit-text-stroke: 2px black; /* Black outline */
-    font-size: 2.5rem;
-    margin: 0;
+    font-family: 'Bangers', cursive; /* Police très impactante et fun */
+    color: #FFF;
+    -webkit-text-stroke: 3px black; /* Black outline plus épais */
+    text-stroke: 3px black;
+    font-size: 3.5rem;
+    margin: 0 0 5px 0;
+    letter-spacing: 2px;
+}
+
+.tagline {
+    color: #FFF;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    background-color: #ffffff; /* White */
+    background-color: #000; /* Barre de navigation noire pour le contraste */
     text-align: center;
-    border-bottom: 2px solid #000; /* Black border */
+    border-bottom: 3px solid #FFD700; /* Touche de couleur */
 }
 
 nav ul li {
     display: inline;
-    margin: 0 2rem;
+    margin: 0 1rem;
 }
 
 nav ul li a {
-    color: #000; /* Black text */
+    color: #FFF; /* Texte blanc sur fond noir */
     text-decoration: none;
-    padding: 1rem 0;
+    padding: 1rem 1.5rem;
     display: inline-block;
     font-weight: bold;
-    font-family: 'Comic Sans MS', cursive, sans-serif; /* Fun font */
-    transition: color 0.3s ease;
+    font-family: 'Open Sans', sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #800080; /* Purple on hover */
+    background-color: #FFD700; /* Jaune or survol */
+    color: #000;
 }
 
 main {
-    padding: 2rem;
-    max-width: 800px;
+    padding: 2rem 1rem;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
 .content {
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.95); /* Fond blanc semi-transparent */
     color: #333;
     padding: 2rem;
     margin-bottom: 2rem;
-    border-radius: 0;
-    box-shadow: none;
-    border: none;
+    border-radius: 10px; /* Bords arrondis pour la douceur */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Ombre plus marquée */
 }
 
 .hidden {
     display: none;
 }
 
-footer {
+/* Titres de sections */
+.section-title {
+    font-family: 'Bangers', cursive;
+    font-size: 2.5rem;
+    color: #8A2BE2; /* Violet */
     text-align: center;
-    padding: 1rem;
-    background-color: transparent;
-    border-top: none;
+    margin-bottom: 25px;
+    border-bottom: 2px dashed #FF69B4;
+    padding-bottom: 10px;
 }
 
-/* Menu item styles */
+/* Boutons CTA */
+.cta-button {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    background-color: #FF69B4; /* Rose vif */
+    color: #FFF;
+    border: 3px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: block; /* S'assurer qu'il prend toute la largeur */
+    width: 100%;
+    max-width: 300px;
+    margin: 20px auto;
+    box-shadow: 4px 4px 0 #000; /* Effet 3D Pop */
+}
+
+.cta-button:hover {
+    background-color: #FFD700; /* Jaune à l'activation */
+    color: #000;
+    transform: translateY(-2px);
+    box-shadow: 6px 6px 0 #000;
+}
+
+/* Grille de Menu */
+.menu-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.category-title {
+    font-family: 'Bangers', cursive;
+    font-size: 2rem;
+    color: #FF69B4;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
 .menu-item {
-    display: inline-block;
-    width: 200px;
-    height: 200px;
-    border: 2px solid #000;
-    margin: 10px;
+    position: relative;
+    width: 280px; /* Taille plus grande pour les images */
+    height: 280px;
+    border: 5px solid #000;
     cursor: pointer;
     overflow: hidden;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 5px;
 }
 
 .menu-item:hover {
-    transform: scale(1.05);
+    transform: scale(1.05) rotate(1deg); /* Léger tremblement */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
 }
 
 .menu-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: opacity 0.3s ease;
 }
 
-/* Modal styles */
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.9);
-}
-
-.modal-content {
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    max-width: 600px;
-    text-align: center;
-    background-color: #fff;
-}
-
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-}
-
-#modalImage {
-    width: 100%;
-    height: auto;
-    max-height: 400px;
-    object-fit: contain;
-}
-
-#modalDescription {
-    margin-top: 10px;
-    font-size: 18px;
-    color: #333;
-}
-
-/* Back button styles */
-.back-button {
-    font-family: 'Comic Sans MS', cursive, sans-serif;
-    font-size: 18px;
-    padding: 10px 20px;
-    background-color: transparent;
-    border: 2px solid #800080;
-    color: #800080;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    -webkit-text-stroke: 1px #800080;
-    text-stroke: 1px #800080;
-}
-
-.back-button:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-/* Image caption styles */
-.image-caption {
-    position: relative;
+.caption-overlay {
+    position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
     text-align: center;
-    font-family: 'Comic Sans MS', cursive, sans-serif;
-    font-size: 24px;
+    padding: 10px 0;
+    font-family: 'Bangers', cursive;
+    font-size: 28px;
     color: #fff;
-    -webkit-text-stroke: 2px #000;
-    text-stroke: 2px #000;
-    margin: 10px 0;
+    background-color: rgba(0, 0, 0, 0.6); /* Fond semi-transparent pour le texte */
+    -webkit-text-stroke: 1px #FFD700; /* Contour jaune */
+    text-stroke: 1px #FFD700;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+/* Back button styles */
+.back-button {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    padding: 10px 20px;
+    background-color: #8A2BE2; /* Violet */
+    border: 3px solid #000;
+    color: #FFF;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.back-button:hover {
+    background-color: #FFD700;
+    color: #000;
+}
+
+/* Styles pour la page de Détail */
+#detailDescription .detail-description {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+#detailDescription .detail-accomp {
+    font-style: italic;
+    font-size: 1rem;
+    color: #8A2BE2; /* Violet */
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+    margin-top: 20px;
+}
+
+/* Styles des liens sociaux */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.social-link {
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.social-link:hover {
+    transform: scale(1.1);
+}
+
+.social-link img {
+    width: 80px;
+    height: auto;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+/* Styles du formulaire de contact */
+#contactForm label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#contactForm input[type="text"],
+#contactForm input[type="email"],
+#contactForm textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#contactForm textarea {
+    resize: vertical;
+}
+
+#contactForm .cta-button {
+    width: auto;
+    max-width: none;
+    margin: 10px 0 0 0;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #000;
+    color: #FFD700;
+    border-top: 3px solid #FF69B4;
+    font-size: 0.9rem;
 }
