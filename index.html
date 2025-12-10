@@ -3,49 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Billy's 140</title> 
+    <title>Billy's 140 - Cuisine Street Food</title> 
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <img src="logo.jpg" alt="Billy's 140 Logo" class="logo">
-        <h1>Bienvenue sur Billy's 140</h1>
+        <h1>Billy's 140 💥 Saveurs Explosives !</h1>
+        <p class="tagline">Le meilleur de la Street Food, réinventé.</p>
     </header>
     <nav>
         <ul>
-            <li><a href="#" onclick="showContent('menu')">MENU</a></li>
-            <li><a href="#" onclick="showContent('join')">REJOINS NOUS</a></li>
+            <li><a href="#home" onclick="showContent('home')">🏠 Accueil</a></li>
+            <li><a href="#menu" onclick="showContent('menu')">🍔 Menu</a></li>
+            <li><a href="#about" onclick="showContent('about')">📜 À Propos</a></li>
+            <li><a href="#join" onclick="showContent('join')">✨ Rejoins Nous</a></li>
+            <li><a href="#contact" onclick="showContent('contact')">📞 Contact</a></li>
         </ul>
     </nav>
     <main>
-        <section id="menu" class="content">
-            <h2>Menu</h2>
-            <p>Découvrez notre menu délicieux avec une variété de plats savoureux.</p>
-            <div class="menu-item" onclick="showContent('tasty')">
-                <img src="photo/tasty.png" alt="Tasty" class="menu-image">
-                <p class="menu-caption">Tasty</p>
+        <section id="home" class="content">
+            <h2 class="section-title">Bienvenue chez Billy's 140 !</h2>
+            <div class="hero-content">
+                <p>Préparez-vous pour une explosion de saveurs ! Billy's 140 vous propose des plats uniques inspirés de la cuisine du monde, avec une touche de folie. Découvrez nos bowls croustillants et nos sauces secrètes !</p>
+                <button class="cta-button" onclick="showContent('menu')">Découvrir le Menu Complet</button>
+                <div class="social-links">
+                    <a href="https://www.tiktok.com/@billys_140" target="_blank" title="TikTok"><img src="https://img.icons8.com/color/48/tiktok--v1.png" alt="TikTok"></a>
+                    <a href="https://www.instagram.com/billys_140/" target="_blank" title="Instagram"><img src="https://img.icons8.com/color/48/instagram-new--v1.png" alt="Instagram"></a>
+                </div>
             </div>
         </section>
+
+        <section id="menu" class="content hidden">
+            <h2 class="section-title">Notre Menu Explosif 🚀</h2>
+            
+            <h3 class="category-title">Nos Burgers Smashés</h3>
+            <div class="menu-grid">
+                <div class="menu-item" data-id="billys">
+                    <img src="menus billys.png" alt="Menus Billys" class="menu-image">
+                    <div class="caption-overlay">Menus Billys</div>
+                </div>
+                <div class="menu-item" data-id="bigben">
+                    <img src="menus big ben.png" alt="Menus Big Ben" class="menu-image">
+                    <div class="caption-overlay">Menus Big Ben</div>
+                </div>
+                <div class="menu-item" data-id="tony">
+                    <img src="menus tony montagnard.png" alt="Menus Tony Montagnard" class="menu-image">
+                    <div class="caption-overlay">Menus Tony Montagnard</div>
+                </div>
+                <div class="menu-item" data-id="beefm">
+                    <img src="menus beef M.png" alt="Menus Beef M." class="menu-image">
+                    <div class="caption-overlay">Menus Beef M.</div>
+                </div>
+                <div class="menu-item" data-id="fullcheese">
+                    <img src="menu full chesse.png" alt="Menus Full Cheese" class="menu-image">
+                    <div class="caption-overlay">Menus Full Cheese</div>
+                </div>
+                <div class="menu-item" data-id="billyssteak">
+                    <img src="billys stek.png" alt="Billys Steak" class="menu-image">
+                    <div class="caption-overlay">Billys Steak</div>
+                </div>
+                
+            </div>
+
+            <h3 class="category-title">Nos Spécialités</h3>
+            <div class="menu-grid">
+                 <div class="menu-item" data-id="dynamite">
+                    <img src="dynamique boxe.png" alt="Dynamite Boxe" class="menu-image">
+                    <div class="caption-overlay">Dynamite Boxe</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="content hidden">
+            <h2 class="section-title">L'Histoire de Billy's 140</h2>
+            <p>Billy's 140 est né de l'amour de la **Street Food** et du désir de mélanger les cultures culinaires. Notre concept est simple : des ingrédients frais, des préparations maison et des recettes pleines d'audace. 🌶️ Nous croyons que bien manger doit être amusant et accessible !</p>
+            <p>Venez découvrir notre approche unique de la restauration rapide de qualité.</p>
+        </section>
+
         <section id="join" class="content hidden">
-            <h2>Rejoins Nous</h2>
-            <p>Suivez-nous sur les réseaux sociaux pour les dernières nouvelles et offres spéciales.</p>
-            <br><br>
-            <a href="https://www.tiktok.com/@billys_140" target="_blank">
-                <img src="https://img.icons8.com/color/96/tiktok--v1.png" alt="TikTok" style="width: 100px; height: auto; border: none;">
-            </a>
-            <a href="https://www.instagram.com/billys_140/" target="_blank">
-                <img src="https://img.icons8.com/color/96/instagram-new--v1.png" alt="Instagram" style="width: 100px; height: auto; border: none;">
-            </a>
+            <h2 class="section-title">Rejoins la Communauté Billy's 140 !</h2>
+            <p>Ne rate rien de nos nouveautés, concours et coulisses !</p>
+            <div class="social-icons">
+                <a href="https://www.tiktok.com/@billys_140" target="_blank" class="social-link tiktok">
+                    <img src="https://img.icons8.com/color/96/tiktok--v1.png" alt="TikTok">
+                    <span>@billys_140</span>
+                </a>
+                <a href="https://www.instagram.com/billys_140/" target="_blank" class="social-link instagram">
+                    <img src="https://img.icons8.com/color/96/instagram-new--v1.png" alt="Instagram">
+                    <span>@billys_140</span>
+                </a>
+            </div>
         </section>
-        <section id="tasty" class="content hidden">
-            <h2>Tasty</h2>
-            <img src="photo/tasty.png" alt="Tasty" style="width: 100%; max-width: 600px; height: auto;">
-            <p>Riz, Sauce maison, poulet crousty, sauce chili thaï</p>
-            <button class="back-button" onclick="showContent('menu')">Retour au Menu</button>
+
+        <section id="contact" class="content hidden">
+            <h2 class="section-title">Contacte-Nous 📬</h2>
+            <p>Pour toute question ou commande spéciale, utilisez le formulaire ci-dessous. Nous vous répondrons rapidement.</p>
+            <form id="contactForm">
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <button type="submit" class="cta-button">Envoyer le Message</button>
+            </form>
+            <p id="formMessage" style="margin-top: 15px; font-weight: bold;"></p>
         </section>
+        
+        <section id="detail" class="content hidden">
+            <h2 id="detailTitle" class="section-title"></h2>
+            <img id="detailImage" src="" alt="" style="width: 100%; max-width: 600px; height: auto;">
+            <div id="detailDescription"></div>
+            <button class="back-button" onclick="showContent('menu')">« Retour au Menu Complet</button>
+        </section>
+
     </main>
     <footer>
-        <!-- TikTok logo removed from footer -->
+        <p>&copy; 2024 Billy's 140. Tous droits réservés.</p>
     </footer>
     <script src="script.js"></script>
 </body>
